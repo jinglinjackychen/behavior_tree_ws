@@ -1,0 +1,20 @@
+?
+	->
+		(User Pressed Sleep Button)
+		?
+			(Is Trajectory Useable)
+			[Go To Home]
+		?
+			(Is Sleep)
+			[Sleep]
+	->
+		(User Pressed Trajectory Button)
+		?
+			(In Working Range)
+			[Stop]
+		?
+			(At Goal Point)
+			[Move Arm]
+		?
+			(Is Force Safe)
+			[Force Alert]
